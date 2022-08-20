@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../code/css/main.css" />
+    <title>Contador de tempo</title>
+
+  </head>
+  <body >
+    <header class="header container">
+      
+      <button class="header__btn" data-contador="reiniciar">Voltar</button>
+    </header>
+    <section data-contador="section" class="contador container">
+      <h2 class="title">Faltam</h2>
+      <div class="contador__numbers">
+        <div class="contador__digitos">
+          <h1 data-contador="dias" class="title-numbers">0</h1>
+          <h3 class="sub-title">Dias</h3>
+        </div>
+        <div class="contador__digitos">
+          <h1 data-contador="horas" class="title-numbers">0</h1>
+          <h3 class="sub-title">Horas</h3>
+        </div>
+        <div class="contador__digitos">
+          <h1 data-contador="minutos" class="title-numbers">0</h1>
+          <h3 class="sub-title">Minutos</h3>
+        </div>
+        <div class="contador__digitos">
+          <h1 data-contador="segundos" class="title-numbers">0</h1>
+          <h3 class="sub-title">Segundos</h3>
+        </div>
+      </div>
+    </section>
+    <div data-loader class="loader container hidden ">
+      <div class="loader__spinner"></div>
+    </div>
+    <div data-modal class="modal">
+      
+      <div class="modal__content">
+
+        <h2 data-modal="title" class="title-modal">Contador de tempo <br> <br> <br> Informe uma data</h2>
+        <form class="modal__form">
+          <div class="modal__data">
+            <input data-modal="data" class="modal__input" type="date" name="dia" required="required" />
+          </div>
+        </form>
+        <button data-modal="btn" class="modal__btn">Iniciar<a href="unicid.com.br"></a></button>
+      </div>
+    </div>
+    <script type="module" src="./../code/script/main.js"></script>
+  </body>
+</html>
